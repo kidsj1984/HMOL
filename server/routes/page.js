@@ -1,4 +1,4 @@
-import isEmpty from 'lodash/isEmpty';
+// import isEmpty from 'lodash/isEmpty';
 
 
 exports.default = function(router){
@@ -12,5 +12,8 @@ exports.default = function(router){
   router.get('/', function *() {
     yield this.render('index');
   });
+
+
+
 
 };

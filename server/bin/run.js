@@ -1,5 +1,5 @@
 /**
- * Created by kee on 15/10/21.
+ * Created by shanjie on 16/9/25.
  */
 import app from '../app';
 //import mongoConnection from '../db/connection';
@@ -11,7 +11,7 @@ import app from '../app';
   //  console.error('ERROR:', e);
   //  return;
   //}
-  app.listen(3000, '127.0.0.1', ()=>{
+  app.listen(3001, '127.0.0.1', ()=>{
     console.log('server listen');
   });
 })();
