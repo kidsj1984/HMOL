@@ -8,6 +8,7 @@ export default class ArticleItem extends Component {
   static displayName = 'widgetArticleItem';
 
   static propTypes = {
+    showAvatar: PropTypes.bool,
     CreatTime: PropTypes.string,
     HeadImg: PropTypes.string,
     Id: PropTypes.string,
@@ -22,7 +23,9 @@ export default class ArticleItem extends Component {
   render() {
     return (
       <li className="article-item">
-        <div className="article-avatar" style={{backgroundImage: `url('${this.props.UserHeadImage}')`}} />
+        {this.props.showAvatar ? (
+          <div className="article-avatar" style={{backgroundImage: `url('${this.props.UserHeadImage}')`}} />
+        ) : null}
         <div className="article-pic" style={{backgroundImage: `url('${this.props.HeadImg}')`}} />
         <div className="article-context">
           <div className="article-author">By {this.props.UserName}  -  {this.props.CreatTime}</div>

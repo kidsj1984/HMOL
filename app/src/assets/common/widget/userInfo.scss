@@ -1,0 +1,115 @@
+.user-info {
+	background-color: #00a7e1;
+	height: 420px;
+
+	.user-head {
+		display: flex;
+		height: 225px;
+		text-align: center;
+
+		.user-head-left {
+			display: flex;
+			flex: 36;
+
+		}
+
+		.user-head-avatar {
+			position: relative;
+			flex: 28;
+			.avatar {
+				height: 210px;
+				width: 210px;
+				border: 10px #1ab0e4 solid;
+				border-radius: 50%;
+				background-size: cover;
+				background-position: -4px center;
+			}
+			.avatar:before {
+				content: "";
+				display: block;
+				height: 190px;
+				width: 190px;
+				border: 10px #5fc8ec solid;
+				border-radius: 50%;
+			}
+			.icon-follow02 {
+				position: absolute;
+				bottom: 10px;
+				right: 10px;
+				width: 70px;
+				height: 70px;
+				background-image: url("images/icon_follow02.png");
+				background-size: cover;
+			}
+		}
+
+		.user-head-right {
+			display: flex;
+			flex: 36;
+
+		}
+
+		.user-info-item {
+			flex: 1;
+			padding-top: 40px;
+			color: #fff;
+		}
+
+		.item-num {
+			padding-top: 20px;
+			line-height: 30px;
+			font-size: 16px;
+		}
+
+		.item-name {
+			line-height: 30px;
+			font-size: 16px;
+		}
+
+
+		.icon-article, .icon-comment, .icon-follow, .icon-like, .icon-reward {
+			display: inline-block;
+			width: 45px;
+			height: 45px;
+			background-size: cover;
+		}
+		.icon-article {background-image: url("images/icon_article.png");}
+		.icon-comment {background-image: url("images/icon_comment.png");}
+		.icon-follow {background-image: url("images/icon_follow.png");}
+		.icon-like {background-image: url("images/icon_like.png");}
+		.icon-reward {background-image: url("images/icon_reward.png");}
+
+	}
+
+	.user-name {
+		text-align: center;
+		height: 100px;
+		color: #fff;
+		.n {
+			font-size: 45px;
+			line-height: 65px;
+		}
+		.d {
+			font-size: 16px;
+			line-height: 35px;
+		}
+	}
+
+	.user-tag {
+		height: 95px;
+		text-align: center;
+		line-height: 75px;
+		span {
+			display: inline-block;
+			margin: 0 15px 15px 0;
+			height: 40px;
+			line-height: 40px;
+			padding: 0 15px;
+			font-size: 20px;
+			border: 1px #fff solid;
+			color: #fff;
+			border-radius: 10px;
+		}
+	}
+
+}

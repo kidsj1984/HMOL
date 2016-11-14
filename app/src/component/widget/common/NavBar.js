@@ -17,7 +17,8 @@ export default class NavBar extends Component {
     navbarType: PropTypes.string,
     hasBack: PropTypes.bool,
     title: PropTypes.string,
-    onClose: PropTypes.func
+    onClose: PropTypes.func,
+    onSubmit: PropTypes.func
   }
 
   static defaultProps = {
@@ -41,7 +42,7 @@ export default class NavBar extends Component {
   }
 
   onSubmit = () => {
-    console.log('onSubmit');
+    this.props.onSubmit && this.props.onSubmit(this.state.value);
   }
 
 

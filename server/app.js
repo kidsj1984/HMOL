@@ -9,7 +9,6 @@ import bodyparser from 'koa-bodyparser';
 
 
 var app = koa();
-
 render(app, {
   root: path.join(__dirname, '..', 'app/dist'),
   layout: false,

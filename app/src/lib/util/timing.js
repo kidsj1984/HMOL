@@ -70,3 +70,44 @@ export function getTimes() {
     }, false);
   });
 }
+
+
+export function getTimeDiff(oldTime, nowTime = parseInt(Date.now()/1000)) {
+  const diffTime = nowTime - oldTime;
+
+  const diffYear = diffTime >= 31536000 ? parseInt(diffTime/31536000) : 0;
+  const diffMonth = diffTime >= 2592000 ? parseInt(diffTime/2592000) : 0;
+  const diffWeek = diffTime >= 604800 ? parseInt(diffTime/604800) : 0;
+  const diffDays = parseInt(diffTime/86400);
+  const diffHours = parseInt(diffTime/3600);
+  const diffMinutes = parseInt(diffTime/60);
+
+
+  let showDiff = '';
+  if (diffYear > 0) {
+    return `${diffYear}年前`;
+  }
+  if (diffMonth > 0) {
+    return `${diffMonth}个月前`;
+  }
+  if (diffWeek > 0) {
+    return `${diffWeek}周前`;
+  }
+  if (diffDays > 0) {
+    return `${diffDays}天前`;
+  }
+  if (diffHours > 0) {
+    return `${diffHours}小时前`;
+  }
+  if (diffMinutes > 0) {
+    return `${diffMinutes}分钟前`;
+  }
+  if (diffTime > 0) {
+    return `${diffTime}秒前`;
+  }
+
+  return '刚刚';
+
+
+}
+

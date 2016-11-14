@@ -6,12 +6,15 @@ import qs from 'query-string';
 const domain = 'http://120.76.248.8:7001/API';
 
 const modules = [
-  'QueryADInfoList',
-  'QueryCategoryList',
-  'QueryWordInfoPageList',
-  'QueryWordInfoPageListByUserId',
+  'SearchTitle',                          //搜索
+  'QueryMarkList',                        //查询热词
+  'QueryADInfoList',                      //首页广告位
+  'QueryCategoryList',                    //首页导航分类
+  'QueryWordInfoPageList',                //首页文章列表
   'QueryWordInfoDetail',
-  'QueryUserPageListByRecommendation'
+  'QueryUserPageListByRecommendation',    //推荐作者列表
+  'QueryWordInfoPageListByUserId',        //查询某个的文章
+  'QueryUser'                             //查询某个用户信息
 ]
 
 

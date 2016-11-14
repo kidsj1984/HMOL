@@ -6,23 +6,22 @@ const TabPane = Tabs.TabPane;
 
 
 export default class Search extends Component {
-  static displayName = 'HomeSearch';
+  static displayName = 'SearchResult';
 
   static propTypes = {
+    wordMarkList: PropTypes.array,
+    wordCityList: PropTypes.array,
+    userList: PropTypes.array,
   }
 
 
 
   constructor(props) {
     super(props);
-
-    this.state = {
-      value: ''
-    };
   }
 
   callback = (key) => {
-    console.log(key);
+    // console.log(key);
   }
 
 

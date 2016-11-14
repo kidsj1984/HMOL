@@ -1,18 +1,20 @@
 import React, {Component, PropTypes} from 'react';
 import classNames from 'classnames';
 import isEmpty from 'lodash/isEmpty';
-import AuthorItem from '../../widget/common/AuthorItem';
-import InfiniteList from '../../../component/widget/InfiniteList';
+import ArticleItem from './ArticleItem';
+import InfiniteList from '../InfiniteList';
 
 
+import '../../../assets/common/widget/articleList.scss';
 
-
-export default class RecommendList extends Component {
-  static displayName = 'HomeIndexRecommendList';
+export default class ArticleList extends Component {
+  static displayName = 'WidgetArticleList';
 
   static propTypes = {
-    loadRecommend: PropTypes.func,
-    recommendList: PropTypes.array,
+    UserId: PropTypes.number,
+    showAvatar: PropTypes.bool,
+    loadList: PropTypes.func,
+    articleList: PropTypes.array,
     page: PropTypes.number,
     totalPage: PropTypes.number,
     isFetching: PropTypes.bool,
@@ -26,11 +28,15 @@ export default class RecommendList extends Component {
 
   //加载更多
   loadMore = () => {
-    this.props.loadRecommend(false, false);
+    if (!this.props.UserId) {
+      this.props.loadList(false, false);
+    } else {
+      this.props.loadList(this.props.UserId, false, false);
+    }
   }
 
   renderItem = (item, key) => {
-    return <AuthorItem {...item} key={key} />;
+    return <ArticleItem {...item} key={key} showAvatar={this.props.showAvatar} />;
   };
 
   renderItems = (items, props) => {
@@ -41,15 +47,16 @@ export default class RecommendList extends Component {
 
 
   render() {
+
     const hasMore = this.props.page === 0 || this.props.page < this.props.totalPage;
 
-    if (isEmpty(this.props.recommendList) || this.props.recommendList.length === 0 && !hasMore) {
+    if (isEmpty(this.props.articleList) || this.props.articleList.length === 0 && !hasMore) {
       return null;
     }
 
     const listProps = {
-      className: 'recommend-list',
-      items: this.props.recommendList,
+      className: 'article-list',
+      items: this.props.articleList,
       isFetching: this.props.isFetching,
       itemRenderer: this.renderItem,
       itemsRenderer: this.renderItems,
@@ -62,13 +69,4 @@ export default class RecommendList extends Component {
       <InfiniteList {...listProps} />
     );
   }
-
-
-  // render() {
-  //   return (
-  //     <ul>
-  //       <AuthorItem/>
-  //     </ul>
-  //   )
-  // }
 }

@@ -1,18 +1,18 @@
 import React, {Component, PropTypes} from 'react';
 import classNames from 'classnames';
 import isEmpty from 'lodash/isEmpty';
-import ArticleItem from '../../widget/common/ArticleItem';
-import InfiniteList from '../../../component/widget/InfiniteList';
+import AuthorItem from '../../widget/common/AuthorItem';
+import InfiniteList from '../../widget/InfiniteList';
 
 
 
 
-export default class ArticleList extends Component {
-  static displayName = 'HomeIndexArticleList';
+export default class RecommendList extends Component {
+  static displayName = 'RecommendIndexList';
 
   static propTypes = {
-    loadList: PropTypes.func,
-    articleList: PropTypes.array,
+    loadRecommend: PropTypes.func,
+    recommendList: PropTypes.array,
     page: PropTypes.number,
     totalPage: PropTypes.number,
     isFetching: PropTypes.bool,
@@ -26,11 +26,11 @@ export default class ArticleList extends Component {
 
   //加载更多
   loadMore = () => {
-    this.props.loadList(false, false);
+    this.props.loadRecommend(false, false);
   }
 
   renderItem = (item, key) => {
-    return <ArticleItem {...item} key={key} />;
+    return <AuthorItem {...item} key={key} />;
   };
 
   renderItems = (items, props) => {
@@ -41,16 +41,15 @@ export default class ArticleList extends Component {
 
 
   render() {
-
     const hasMore = this.props.page === 0 || this.props.page < this.props.totalPage;
 
-    if (isEmpty(this.props.articleList) || this.props.articleList.length === 0 && !hasMore) {
+    if (isEmpty(this.props.recommendList) || this.props.recommendList.length === 0 && !hasMore) {
       return null;
     }
 
     const listProps = {
-      className: 'article-list',
-      items: this.props.articleList,
+      className: 'recommend-list',
+      items: this.props.recommendList,
       isFetching: this.props.isFetching,
       itemRenderer: this.renderItem,
       itemsRenderer: this.renderItems,
@@ -63,4 +62,13 @@ export default class ArticleList extends Component {
       <InfiniteList {...listProps} />
     );
   }
+
+
+  // render() {
+  //   return (
+  //     <ul>
+  //       <AuthorItem/>
+  //     </ul>
+  //   )
+  // }
 }

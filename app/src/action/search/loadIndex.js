@@ -4,11 +4,11 @@ export const HOME_SEARCH_REQUEST = 'HOME_SEARCH_REQUEST';
 export const HOME_SEARCH_SUCCESS = 'HOME_SEARCH_SUCCESS';
 export const HOME_SEARCH_FAILURE = 'HOME_SEARCH_FAILURE';
 
-function loadSearch(showLoading) {
+function loadIndex(showLoading) {
   return {
     [CALL_API]: {
       types: [HOME_SEARCH_REQUEST, HOME_SEARCH_SUCCESS, HOME_SEARCH_FAILURE],
-      endpoint: '', // todo add endpoint
+      endpoint: 'QueryMarkList',
       json: true,
       showLoading
     }
@@ -22,6 +22,6 @@ export default (force = false, showLoading = true) => {
       return null;
     }
 
-    return dispatch(loadSearch(showLoading));
+    return dispatch(loadIndex(showLoading));
   };
 };

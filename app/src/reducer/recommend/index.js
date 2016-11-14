@@ -1,6 +1,6 @@
 import getReducer from '../getReducer';
 import assign from 'object-assign';
-import {HOME_RECOMMEND_REQUEST, HOME_RECOMMEND_SUCCESS, HOME_RECOMMEND_FAILURE} from '../../action/home/loadRecommend';
+import {HOME_RECOMMEND_REQUEST, HOME_RECOMMEND_SUCCESS, HOME_RECOMMEND_FAILURE} from '../../action/recommend/loadIndex';
 
 function recommend(state = {
   isFetching: false,

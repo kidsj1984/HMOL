@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import {loadBanner, loadNav, loadList} from '../../action/home/loadIndex';
 import BottomTabBar from '../../component/widget/common/BottomTabBar';
 import NavBar, {NAVBAR_NORMAL, NAVBAR_CLOSE, NAVBAR_SEARCH} from '../../component/widget/common/NavBar';
-import ArticleList from '../../component/home/index/ArticleList';
+import ArticleList from '../../component/widget/common/ArticleList';
 import Carousel from '../../component/home/index/Carousel';
 import Banner from '../../component/home//index/Banner';
 
@@ -54,6 +54,7 @@ class IndexPage extends Component {
         <Carousel navList={this.props.navList}/>
 
         <ArticleList
+          showAvatar={true}
           loadList={this.props.loadList}
           isFetching={this.props.isFetching}
           error={this.props.error}

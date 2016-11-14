@@ -1,14 +1,14 @@
 import React, {Component, PropTypes} from 'react';
 import {connect} from 'react-redux';
-import loadRecommend from '../../action/home/loadRecommend';
+import loadRecommend from '../../action/recommend/loadIndex';
 import BottomTabBar from '../../component/widget/common/BottomTabBar';
 import NavBar, {NAVBAR_NORMAL, NAVBAR_CLOSE, NAVBAR_SEARCH} from '../../component/widget/common/NavBar';
-import RecommendList from '../../component/home/Recommend/RecommendList';
+import RecommendList from '../../component/recommend/index/RecommendList';
 
-import '../../assets/pages/home/recommend.scss';
+import '../../assets/pages/recommend/index.scss';
 
 class RecommendPage extends Component {
-  static displayName = 'HomeRecommendPage';
+  static displayName = 'RecommendIndexPage';
 
   static propTypes = {
     selNow: PropTypes.number,
