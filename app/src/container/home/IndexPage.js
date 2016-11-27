@@ -5,7 +5,7 @@ import BottomTabBar from '../../component/widget/common/BottomTabBar';
 import NavBar, {NAVBAR_NORMAL, NAVBAR_CLOSE, NAVBAR_SEARCH} from '../../component/widget/common/NavBar';
 import ArticleList from '../../component/widget/common/ArticleList';
 import Carousel from '../../component/home/index/Carousel';
-import Banner from '../../component/home//index/Banner';
+import Banner from '../../component/home/index/Banner';
 
 import '../../assets/pages/home/index.scss';
 

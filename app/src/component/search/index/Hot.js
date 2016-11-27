@@ -9,7 +9,8 @@ export default class Hot extends Component {
   static displayName = 'SearchHot';
 
   static propTypes = {
-    hotList: PropTypes.array
+    hotList: PropTypes.array,
+    handleSubmit: PropTypes.func.isRequired
   }
 
 
@@ -22,9 +23,10 @@ export default class Hot extends Component {
     };
   }
 
-  callback = (key) => {
-    console.log(key);
+  handleClick(item) {
+    this.props.handleSubmit(item.MarkName);
   }
+
 
 
   render() {
@@ -39,7 +41,7 @@ export default class Hot extends Component {
         <div className="title">WHAT`S HOT</div>
         <div className="search-hot-list">
           {this.props.hotList.map((item, i) => {
-            return (<span key={i}>{item.MarkName}</span>);
+            return (<span key={i} onClick={() => {this.handleClick(item)}} >{item.MarkName}</span>);
           })}
         </div>
       </div>

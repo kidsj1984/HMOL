@@ -1,5 +1,7 @@
 import React, {Component, PropTypes} from 'react';
 import isEmpty from 'lodash/isEmpty';
+import isNumber from 'lodash/isNumber';
+import router from '../../../router';
 
 import '../../../assets/common/widget/authorItem.scss';
 
@@ -22,10 +24,19 @@ export default class AuthorItem extends Component {
     MarkList: PropTypes.array
   }
 
+  handleClick(id) {
+    if (!isNumber(id)) {
+      return;
+    }
+
+    location.href = `${router['user']}${id}`;
+
+  }
+
 
   render() {
     return (
-      <li className="author-item">
+      <li className="author-item" onClick={() => {this.handleClick(this.props.Id)}}>
         <div className="author-avatar" style={{backgroundImage: `url('${this.props.HeadImg}'`}}/>
         <div className="author-name">{this.props.NickName}</div>
         <div className="author-info">{this.props.LikeNum || 0} Articles - {this.props.LikeNum || 0} Likes</div>

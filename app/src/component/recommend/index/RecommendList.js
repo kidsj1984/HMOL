@@ -5,8 +5,6 @@ import AuthorItem from '../../widget/common/AuthorItem';
 import InfiniteList from '../../widget/InfiniteList';
 
 
-
-
 export default class RecommendList extends Component {
   static displayName = 'RecommendIndexList';
 

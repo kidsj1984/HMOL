@@ -9,6 +9,7 @@ import Hot from '../../component/search/index/Hot';
 import Recent from '../../component/search/index/Recent';
 
 
+import 'antd-mobile/lib/icon/style/index.css';
 import '../../assets/pages/Search/index.scss';
 
 class SearchPage extends Component {
@@ -51,7 +52,7 @@ class SearchPage extends Component {
   }
 
   //点击搜索
-  hadnleSubmit = (searchKey) => {
+  handleSubmit = (searchKey) => {
     console.log(searchKey);
 
     this.props.loadSearch(searchKey);
@@ -76,8 +77,8 @@ class SearchPage extends Component {
 
     return (
       <div className="search-init">
-        <Hot hotList={this.props.hotList}/>
-        <Recent searchKey={this.state.searchKey}/>
+        <Hot hotList={this.props.hotList} handleSubmit={this.handleSubmit}/>
+        <Recent searchKey={this.state.searchKey} handleSubmit={this.handleSubmit}/>
       </div>
     )
   }
@@ -89,7 +90,7 @@ class SearchPage extends Component {
       <div>
         <NavBar navbarType={NAVBAR_SEARCH} onClose={() => {
           window.history.back();
-        }} onSubmit={this.hadnleSubmit}/>
+        }} onSubmit={this.handleSubmit}/>
         {this.renderSearch()}
       </div>
 

@@ -10,7 +10,8 @@ export default class Recent extends Component {
 
   static propTypes = {
     searchKey: PropTypes.string,
-    recentSize: PropTypes.number
+    recentSize: PropTypes.number,
+    handleSubmit: PropTypes.func.isRequired
   }
 
   static defaultProps = {
@@ -62,14 +63,9 @@ export default class Recent extends Component {
 
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    // return nextState.unreadCount !== this.state.unreadCount
-    //   || nextProps.name !== this.props.name
-    //   || nextProps.investmentGuide !== this.props.investmentGuide
-    //   || nextProps.isShowRedDot !== this.props.isShowRedDot;
-    return true;
+  handleClick(key) {
+    this.props.handleSubmit(key);
   }
-
 
 
   handleClear = () => {
@@ -88,7 +84,7 @@ export default class Recent extends Component {
 
     this.state.recentList && forEachRight(this.state.recentList, (item, i) => {
       listDom.push(
-        <li key={i}>
+        <li key={i} onClick={() => {this.handleClick(item.key)}}>
           <div className="recent-date">{getTimeDiff(item.date)}</div>
           <div className="recent-key">{item.key}</div>
         </li>

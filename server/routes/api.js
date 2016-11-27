@@ -11,7 +11,7 @@ const modules = [
   'QueryADInfoList',                      //首页广告位
   'QueryCategoryList',                    //首页导航分类
   'QueryWordInfoPageList',                //首页文章列表
-  'QueryWordInfoDetail',
+  'QueryWordInfoDetail',                  //文章详情
   'QueryUserPageListByRecommendation',    //推荐作者列表
   'QueryWordInfoPageListByUserId',        //查询某个的文章
   'QueryUser'                             //查询某个用户信息
