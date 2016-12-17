@@ -6,6 +6,8 @@ import qs from 'query-string';
 const domain = 'http://120.76.248.8:7001/API';
 
 const modules = [
+  'QueryCommentPageList',                 //评论列表
+  'AddComment',                           //添加评论
   'SearchTitle',                          //搜索
   'QueryMarkList',                        //查询热词
   'QueryADInfoList',                      //首页广告位

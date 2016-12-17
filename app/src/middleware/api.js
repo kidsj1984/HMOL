@@ -45,8 +45,8 @@ function callApi({
     }).then(response => {
       if (!response.ok) {
         return Promise.reject({
-          retCode: response.status,
-          retMsg: response.statusText
+          Code: response.status,
+          Message: response.statusText
         });
       }
 
@@ -64,8 +64,8 @@ function callApi({
       return assign({}, {result: json.Data}, {timeDelta});
     }).catch((err) => {
       return Promise.reject({
-        retCode: err.retCode,
-        retMsg: err.retMsg
+        Code: err.Code,
+        Message: err.Message
       });
     });
   });
@@ -123,20 +123,20 @@ export default store => next => action => {
     }));
 
     return {
-      retCode: 0,
-      retMsg: ''
+      Code: 0,
+      Message: ''
     };
-  }, ({retCode, retMsg}) => {
+  }, ({Code, Message}) => {
     next(actionWith({
       type: failureType,
-      error: retMsg,
-      code: retCode,
+      error: Message,
+      code: Code,
       showLoading: false
     }));
 
     return {
-      retCode,
-      retMsg
+      Code,
+      Message
     };
   });
 };

@@ -2,6 +2,8 @@ import React, {Component, PropTypes} from 'react';
 import {Carousel, Flex} from 'antd-mobile';
 import classNames from 'classnames';
 import isEmpty from 'lodash/isEmpty';
+import isNumber from 'lodash/isNumber';
+import router from '../../../router';
 
 
 //重构资源
@@ -20,6 +22,14 @@ export default class Index extends Component {
 
   handleClick(item) {
     console.log(item);
+    const type = item.CategoryId;
+    if (!isNumber(type)) {
+      return;
+    }
+
+
+
+    location.href = `${router['articleList']}${type}`;
   }
 
 
@@ -52,6 +62,8 @@ export default class Index extends Component {
     //   paddingTop: `${this.props.clientWidth / 16}px`
     // };
 
+    //am-flexbox am-flexbox-align-middle
+//am-flexbox-item nav-item am-grid-item
 
     for (let i = 0; i < FlexCount; i++) {
       const flexContent = [];

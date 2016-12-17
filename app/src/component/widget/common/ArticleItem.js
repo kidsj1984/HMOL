@@ -1,5 +1,7 @@
 import React, {Component, PropTypes} from 'react';
 import isEmpty from 'lodash/isEmpty';
+import isNumber from 'lodash/isNumber';
+import router from '../../../router';
 
 import '../../../assets/common/widget/articleItem.scss';
 
@@ -11,7 +13,7 @@ export default class ArticleItem extends Component {
     showAvatar: PropTypes.bool,
     CreatTime: PropTypes.string,
     HeadImg: PropTypes.string,
-    Id: PropTypes.string,
+    Id: PropTypes.number,
     LikeNum: PropTypes.number,
     Title: PropTypes.string,
     UserHeadImage: PropTypes.string,
@@ -19,10 +21,21 @@ export default class ArticleItem extends Component {
     UserName: PropTypes.string
   }
 
+  handleItem = () => {
+    const Id = this.props.Id;
+    if (!isNumber(Id)) {
+      console.log(Id)
+      return;
+    }
+
+    location.href = `${router['article']}${Id}`;
+
+  }
+
 
   render() {
     return (
-      <li className="article-item">
+      <li className="article-item" onClick={this.handleItem}>
         {this.props.showAvatar ? (
           <div className="article-avatar" style={{backgroundImage: `url('${this.props.UserHeadImage}')`}} />
         ) : null}

@@ -56,7 +56,7 @@ function search(state = {
           PageSize: 10,
           Data: [
             {
-              Id: '1',
+              Id: 1,
               Title: 'Title of the Article',
               HeadImg: 'http://oc9nepvur.bkt.clouddn.com/articlePic1.jpg',
               Introduce: '',
@@ -69,7 +69,7 @@ function search(state = {
               UserHeadImage: 'http://placeholder.qiniudn.com/118x118'
             },
             {
-              Id: '1',
+              Id: 2,
               Title: 'Title of the Article',
               HeadImg: 'http://oc9nepvur.bkt.clouddn.com/articlePic2.jpg',
               Introduce: '',
@@ -82,7 +82,7 @@ function search(state = {
               UserHeadImage: 'http://placeholder.qiniudn.com/118x118'
             },
             {
-              Id: '1',
+              Id: 3,
               Title: 'Title of the Article',
               HeadImg: 'http://oc9nepvur.bkt.clouddn.com/articlePic3.jpg',
               Introduce: '',
@@ -105,7 +105,7 @@ function search(state = {
           PageSize: 10,
           Data: [
             {
-              Id: '1',
+              Id: 1,
               Title: 'Title of the Article',
               HeadImg: 'http://oc9nepvur.bkt.clouddn.com/articlePic1.jpg',
               Introduce: '',
@@ -118,7 +118,7 @@ function search(state = {
               UserHeadImage: 'http://placeholder.qiniudn.com/118x118'
             },
             {
-              Id: '1',
+              Id: 2,
               Title: 'Title of the Article',
               HeadImg: 'http://oc9nepvur.bkt.clouddn.com/articlePic2.jpg',
               Introduce: '',
@@ -131,7 +131,7 @@ function search(state = {
               UserHeadImage: 'http://placeholder.qiniudn.com/118x118'
             },
             {
-              Id: '1',
+              Id: 3,
               Title: 'Title of the Article',
               HeadImg: 'http://oc9nepvur.bkt.clouddn.com/articlePic3.jpg',
               Introduce: '',
