@@ -9,7 +9,7 @@ function loadSearch(Title, showLoading) {
     [CALL_API]: {
       types: [SEARCH_REQUEST, SEARCH_SUCCESS, SEARCH_FAILURE],
       endpoint: 'SearchTitle',
-      json: true,
+      json: false,
       params: {
         Title
       },

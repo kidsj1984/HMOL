@@ -9,7 +9,7 @@ function loadIndex(showLoading) {
     [CALL_API]: {
       types: [HOME_SEARCH_REQUEST, HOME_SEARCH_SUCCESS, HOME_SEARCH_FAILURE],
       endpoint: 'QueryMarkList',
-      json: true,
+      json: false,
       showLoading
     }
   };

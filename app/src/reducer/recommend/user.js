@@ -44,51 +44,51 @@ function user(state = {
       });
     }
     case RECOMMEND_ARTICLE_LIST_SUCCESS: {
-      action.response.result.AllPageCount = 3;
-      // console.log('HOME_INDEX_SUCCESS');
-      action.response.result.Data = [
-        {
-          Id: 1,
-          Title: 'Title of the Article',
-          HeadImg: 'http://oc9nepvur.bkt.clouddn.com/articlePic1.jpg',
-          Introduce: '',
-          WordContent: '',
-          CreatTime: '2 hours ago',
-          LikeNum: 377,
-          CommentNum: 122,
-          UserId: 1,
-          UserName: 'Olen B. Shephard',
-          UserHeadImage: 'http://placeholder.qiniudn.com/118x118'
-        },
-        {
-          Id: 2,
-          Title: 'Title of the Article',
-          HeadImg: 'http://oc9nepvur.bkt.clouddn.com/articlePic2.jpg',
-          Introduce: '',
-          WordContent: '',
-          CreatTime: '2 hours ago',
-          LikeNum: 377,
-          CommentNum: 122,
-          UserId: 1,
-          UserName: 'Olen B. Shephard',
-          UserHeadImage: 'http://placeholder.qiniudn.com/118x118'
-        },
-        {
-          Id: 3,
-          Title: 'Title of the Article',
-          HeadImg: 'http://oc9nepvur.bkt.clouddn.com/articlePic3.jpg',
-          Introduce: '',
-          WordContent: '',
-          CreatTime: '2 hours ago',
-          LikeNum: 377,
-          CommentNum: 122,
-          UserId: 1,
-          UserName: 'Olen B. Shephard',
-          UserHeadImage: 'http://placeholder.qiniudn.com/118x118'
-        }
-
-
-      ]
+      // action.response.result.AllPageCount = 3;
+      // // console.log('HOME_INDEX_SUCCESS');
+      // action.response.result.Data = [
+      //   {
+      //     Id: 1,
+      //     Title: 'Title of the Article',
+      //     HeadImg: 'http://oc9nepvur.bkt.clouddn.com/articlePic1.jpg',
+      //     Introduce: '',
+      //     WordContent: '',
+      //     CreatTime: '2 hours ago',
+      //     LikeNum: 377,
+      //     CommentNum: 122,
+      //     UserId: 1,
+      //     UserName: 'Olen B. Shephard',
+      //     UserHeadImage: 'http://placeholder.qiniudn.com/118x118'
+      //   },
+      //   {
+      //     Id: 2,
+      //     Title: 'Title of the Article',
+      //     HeadImg: 'http://oc9nepvur.bkt.clouddn.com/articlePic2.jpg',
+      //     Introduce: '',
+      //     WordContent: '',
+      //     CreatTime: '2 hours ago',
+      //     LikeNum: 377,
+      //     CommentNum: 122,
+      //     UserId: 1,
+      //     UserName: 'Olen B. Shephard',
+      //     UserHeadImage: 'http://placeholder.qiniudn.com/118x118'
+      //   },
+      //   {
+      //     Id: 3,
+      //     Title: 'Title of the Article',
+      //     HeadImg: 'http://oc9nepvur.bkt.clouddn.com/articlePic3.jpg',
+      //     Introduce: '',
+      //     WordContent: '',
+      //     CreatTime: '2 hours ago',
+      //     LikeNum: 377,
+      //     CommentNum: 122,
+      //     UserId: 1,
+      //     UserName: 'Olen B. Shephard',
+      //     UserHeadImage: 'http://placeholder.qiniudn.com/118x118'
+      //   }
+      //
+      //
+      // ]
       // console.log(state);
 
 

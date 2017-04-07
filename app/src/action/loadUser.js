@@ -9,7 +9,7 @@ function loadUser() {
     [CALL_API]: {
       types: [USER_REQUEST, USER_SUCCESS, USER_FAILURE],
       endpoint: 'profile',
-      json: true
+      json: false
     }
   };
 }

@@ -11,7 +11,7 @@ function loadList(page, refresh, showLoading) {
     [CALL_API]: {
       types: [ARTICLE_LIST_REQUEST, ARTICLE_LIST_SUCCESS, ARTICLE_LIST_FAILURE],
       endpoint: 'QueryWordInfoPageList',
-      json: true,
+      json: false,
       params: {
         PageIndex: page
       },

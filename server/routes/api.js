@@ -16,7 +16,11 @@ const modules = [
   'QueryWordInfoDetail',                  //文章详情
   'QueryUserPageListByRecommendation',    //推荐作者列表
   'QueryWordInfoPageListByUserId',        //查询某个的文章
-  'QueryUser'                             //查询某个用户信息
+  'QueryUser',                            //查询某个用户信息
+  'QueryMine',                            //查询自己的用户信息
+  'MyFansList',                           //我喜欢的人分页列表
+  'MyFavoriteInfoList',                   //我喜欢的文章分页列表
+  'MyWordInfoList'                        //我的文章分页列表
 ]
 
 

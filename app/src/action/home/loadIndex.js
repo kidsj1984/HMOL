@@ -15,7 +15,7 @@ function loadBanner(showLoading) {
     [CALL_API]: {
       types: [HOME_INDEX_BANNER_REQUEST, HOME_INDEX_BANNER_SUCCESS, HOME_INDEX_BANNER_FAILURE],
       endpoint: 'QueryADInfoList',
-      json: true,
+      json: false,
       params: {
         TopNum: 5
       },
@@ -29,7 +29,7 @@ function loadNav(showLoading) {
     [CALL_API]: {
       types: [HOME_INDEX_NAV_REQUEST, HOME_INDEX_NAV_SUCCESS, HOME_INDEX_NAV_FAILURE],
       endpoint: 'QueryCategoryList',
-      json: true,
+      json: false,
       showLoading
     }
   };
@@ -43,7 +43,7 @@ function loadList(page, refresh, showLoading) {
     [CALL_API]: {
       types: [HOME_INDEX_REQUEST, HOME_INDEX_SUCCESS, HOME_INDEX_FAILURE],
       endpoint: 'QueryWordInfoPageList',
-      json: true,
+      json: false,
       params: {
         PageIndex: page
       },

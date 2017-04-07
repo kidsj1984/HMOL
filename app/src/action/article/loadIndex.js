@@ -16,7 +16,7 @@ function loadIndex(showLoading, Id) {
     [CALL_API]: {
       types: [ARTICLE_INDEX_REQUEST, ARTICLE_INDEX_SUCCESS, ARTICLE_INDEX_FAILURE],
       endpoint: 'QueryWordInfoDetail', // todo add endpoint
-      json: true,
+      json: false,
       params: {
         Id
       },
@@ -32,7 +32,7 @@ function loadComment(page, refresh, showLoading, Id) {
     [CALL_API]: {
       types: [ARTICLE_COMMENT_REQUEST, ARTICLE_COMMENT_SUCCESS, ARTICLE_COMMENT_FAILURE],
       endpoint: 'QueryCommentPageList',
-      json: true,
+      json: false,
       params: {
         TargetId: Id,
         CommentType: 2,   //评论type 人:1 ,文章:2
@@ -48,7 +48,7 @@ function addComment(TargetId, CommentContent) {
     [CALL_API]: {
       types: [ARTICLE_ADD_COMMENT_REQUEST, ARTICLE_ADD_COMMENT_SUCCESS, ARTICLE_ADD_COMMENT_FAILURE],
       endpoint: 'AddComment', // todo add endpoint
-      json: true,
+      json: false,
       params: {
         TargetId,
         CommentType: 2,   //评论type 人:1 ,文章:2

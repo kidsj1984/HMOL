@@ -14,207 +14,207 @@ function recommend(state = {
         isFetching: true
       });
     case HOME_RECOMMEND_SUCCESS:
-      action.response.result.AllPageCount = 3;
-      action.response.result.Data = [
-        {
-          Id: 1,
-          UserId: 1,
-          NickName: 'shanjie',
-          HeadImg: 'http://placeholder.qiniudn.com/118x118',
-          City: 'shanghai',
-          Country: 'china',
-          Introduce: 'it',
-          Vip: 8,
-          Sex: '男',
-          LikeNum: 399,
-          MarkList: [
-            {
-              Id: 1,
-              MarkName: 'ASIA'
-            },
-            {
-              Id: 2,
-              MarkName: 'SPA'
-            }
-          ]
-        },
-        {
-          Id: 1,
-          UserId: 1,
-          NickName: 'shanjie',
-          HeadImg: 'http://placeholder.qiniudn.com/118x118',
-          City: 'shanghai',
-          Country: 'china',
-          Introduce: 'it',
-          Vip: 8,
-          Sex: '男',
-          LikeNum: 399,
-          MarkList: [
-            {
-              Id: 1,
-              MarkName: 'ASIA'
-            },
-            {
-              Id: 2,
-              MarkName: 'SPA'
-            }
-          ]
-        },
-        {
-          Id: 1,
-          UserId: 1,
-          NickName: 'shanjie',
-          HeadImg: 'http://placeholder.qiniudn.com/118x118',
-          City: 'shanghai',
-          Country: 'china',
-          Introduce: 'it',
-          Vip: 8,
-          Sex: '男',
-          LikeNum: 399,
-          MarkList: [
-            {
-              Id: 1,
-              MarkName: 'ASIA'
-            },
-            {
-              Id: 2,
-              MarkName: 'SPA'
-            }
-          ]
-        },
-        {
-          Id: 1,
-          UserId: 1,
-          NickName: 'shanjie',
-          HeadImg: 'http://placeholder.qiniudn.com/118x118',
-          City: 'shanghai',
-          Country: 'china',
-          Introduce: 'it',
-          Vip: 8,
-          Sex: '男',
-          LikeNum: 399,
-          MarkList: [
-            {
-              Id: 1,
-              MarkName: 'ASIA'
-            },
-            {
-              Id: 2,
-              MarkName: 'SPA'
-            }
-          ]
-        },
-        {
-          Id: 1,
-          UserId: 1,
-          NickName: 'shanjie',
-          HeadImg: 'http://placeholder.qiniudn.com/118x118',
-          City: 'shanghai',
-          Country: 'china',
-          Introduce: 'it',
-          Vip: 8,
-          Sex: '男',
-          LikeNum: 399,
-          MarkList: [
-            {
-              Id: 1,
-              MarkName: 'ASIA'
-            },
-            {
-              Id: 2,
-              MarkName: 'SPA'
-            }
-          ]
-        },
-        {
-          Id: 1,
-          UserId: 1,
-          NickName: 'shanjie',
-          HeadImg: 'http://placeholder.qiniudn.com/118x118',
-          City: 'shanghai',
-          Country: 'china',
-          Introduce: 'it',
-          Vip: 8,
-          Sex: '男',
-          LikeNum: 399,
-          MarkList: [
-            {
-              Id: 1,
-              MarkName: 'ASIA'
-            },
-            {
-              Id: 2,
-              MarkName: 'SPA'
-            }
-          ]
-        },
-        {
-          Id: 1,
-          UserId: 1,
-          NickName: 'shanjie',
-          HeadImg: 'http://placeholder.qiniudn.com/118x118',
-          City: 'shanghai',
-          Country: 'china',
-          Introduce: 'it',
-          Vip: 8,
-          Sex: '男',
-          LikeNum: 399,
-          MarkList: [
-            {
-              Id: 1,
-              MarkName: 'ASIA'
-            },
-            {
-              Id: 2,
-              MarkName: 'SPA'
-            }
-          ]
-        },
-        {
-          Id: 1,
-          UserId: 1,
-          NickName: 'shanjie',
-          HeadImg: 'http://placeholder.qiniudn.com/118x118',
-          City: 'shanghai',
-          Country: 'china',
-          Introduce: 'it',
-          Vip: 8,
-          Sex: '男',
-          LikeNum: 399,
-          MarkList: [
-            {
-              Id: 1,
-              MarkName: 'ASIA'
-            },
-            {
-              Id: 2,
-              MarkName: 'SPA'
-            }
-          ]
-        },
-        {
-          Id: 1,
-          UserId: 1,
-          NickName: 'shanjie',
-          HeadImg: 'http://placeholder.qiniudn.com/118x118',
-          City: 'shanghai',
-          Country: 'china',
-          Introduce: 'it',
-          Vip: 8,
-          Sex: '男',
-          LikeNum: 399,
-          MarkList: [
-            {
-              Id: 1,
-              MarkName: 'ASIA'
-            },
-            {
-              Id: 2,
-              MarkName: 'SPA'
-            }
-          ]
-        }
-      ]
+      // action.response.result.AllPageCount = 3;
+      // action.response.result.Data = [
+      //   {
+      //     Id: 1,
+      //     UserId: 1,
+      //     NickName: 'shanjie',
+      //     HeadImg: 'http://placeholder.qiniudn.com/118x118',
+      //     City: 'shanghai',
+      //     Country: 'china',
+      //     Introduce: 'it',
+      //     Vip: 8,
+      //     Sex: '男',
+      //     LikeNum: 399,
+      //     MarkList: [
+      //       {
+      //         Id: 1,
+      //         MarkName: 'ASIA'
+      //       },
+      //       {
+      //         Id: 2,
+      //         MarkName: 'SPA'
+      //       }
+      //     ]
+      //   },
+      //   {
+      //     Id: 1,
+      //     UserId: 1,
+      //     NickName: 'shanjie',
+      //     HeadImg: 'http://placeholder.qiniudn.com/118x118',
+      //     City: 'shanghai',
+      //     Country: 'china',
+      //     Introduce: 'it',
+      //     Vip: 8,
+      //     Sex: '男',
+      //     LikeNum: 399,
+      //     MarkList: [
+      //       {
+      //         Id: 1,
+      //         MarkName: 'ASIA'
+      //       },
+      //       {
+      //         Id: 2,
+      //         MarkName: 'SPA'
+      //       }
+      //     ]
+      //   },
+      //   {
+      //     Id: 1,
+      //     UserId: 1,
+      //     NickName: 'shanjie',
+      //     HeadImg: 'http://placeholder.qiniudn.com/118x118',
+      //     City: 'shanghai',
+      //     Country: 'china',
+      //     Introduce: 'it',
+      //     Vip: 8,
+      //     Sex: '男',
+      //     LikeNum: 399,
+      //     MarkList: [
+      //       {
+      //         Id: 1,
+      //         MarkName: 'ASIA'
+      //       },
+      //       {
+      //         Id: 2,
+      //         MarkName: 'SPA'
+      //       }
+      //     ]
+      //   },
+      //   {
+      //     Id: 1,
+      //     UserId: 1,
+      //     NickName: 'shanjie',
+      //     HeadImg: 'http://placeholder.qiniudn.com/118x118',
+      //     City: 'shanghai',
+      //     Country: 'china',
+      //     Introduce: 'it',
+      //     Vip: 8,
+      //     Sex: '男',
+      //     LikeNum: 399,
+      //     MarkList: [
+      //       {
+      //         Id: 1,
+      //         MarkName: 'ASIA'
+      //       },
+      //       {
+      //         Id: 2,
+      //         MarkName: 'SPA'
+      //       }
+      //     ]
+      //   },
+      //   {
+      //     Id: 1,
+      //     UserId: 1,
+      //     NickName: 'shanjie',
+      //     HeadImg: 'http://placeholder.qiniudn.com/118x118',
+      //     City: 'shanghai',
+      //     Country: 'china',
+      //     Introduce: 'it',
+      //     Vip: 8,
+      //     Sex: '男',
+      //     LikeNum: 399,
+      //     MarkList: [
+      //       {
+      //         Id: 1,
+      //         MarkName: 'ASIA'
+      //       },
+      //       {
+      //         Id: 2,
+      //         MarkName: 'SPA'
+      //       }
+      //     ]
+      //   },
+      //   {
+      //     Id: 1,
+      //     UserId: 1,
+      //     NickName: 'shanjie',
+      //     HeadImg: 'http://placeholder.qiniudn.com/118x118',
+      //     City: 'shanghai',
+      //     Country: 'china',
+      //     Introduce: 'it',
+      //     Vip: 8,
+      //     Sex: '男',
+      //     LikeNum: 399,
+      //     MarkList: [
+      //       {
+      //         Id: 1,
+      //         MarkName: 'ASIA'
+      //       },
+      //       {
+      //         Id: 2,
+      //         MarkName: 'SPA'
+      //       }
+      //     ]
+      //   },
+      //   {
+      //     Id: 1,
+      //     UserId: 1,
+      //     NickName: 'shanjie',
+      //     HeadImg: 'http://placeholder.qiniudn.com/118x118',
+      //     City: 'shanghai',
+      //     Country: 'china',
+      //     Introduce: 'it',
+      //     Vip: 8,
+      //     Sex: '男',
+      //     LikeNum: 399,
+      //     MarkList: [
+      //       {
+      //         Id: 1,
+      //         MarkName: 'ASIA'
+      //       },
+      //       {
+      //         Id: 2,
+      //         MarkName: 'SPA'
+      //       }
+      //     ]
+      //   },
+      //   {
+      //     Id: 1,
+      //     UserId: 1,
+      //     NickName: 'shanjie',
+      //     HeadImg: 'http://placeholder.qiniudn.com/118x118',
+      //     City: 'shanghai',
+      //     Country: 'china',
+      //     Introduce: 'it',
+      //     Vip: 8,
+      //     Sex: '男',
+      //     LikeNum: 399,
+      //     MarkList: [
+      //       {
+      //         Id: 1,
+      //         MarkName: 'ASIA'
+      //       },
+      //       {
+      //         Id: 2,
+      //         MarkName: 'SPA'
+      //       }
+      //     ]
+      //   },
+      //   {
+      //     Id: 1,
+      //     UserId: 1,
+      //     NickName: 'shanjie',
+      //     HeadImg: 'http://placeholder.qiniudn.com/118x118',
+      //     City: 'shanghai',
+      //     Country: 'china',
+      //     Introduce: 'it',
+      //     Vip: 8,
+      //     Sex: '男',
+      //     LikeNum: 399,
+      //     MarkList: [
+      //       {
+      //         Id: 1,
+      //         MarkName: 'ASIA'
+      //       },
+      //       {
+      //         Id: 2,
+      //         MarkName: 'SPA'
+      //       }
+      //     ]
+      //   }
+      // ]
 
 
       const {AllDataCount, AllPageCount, CurrentPageIndex, Data } = action.response.result;

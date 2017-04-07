@@ -50,43 +50,43 @@ function index(state = {
     }
     case HOME_INDEX_NAV_SUCCESS: {
 
-      action.response.result = [
-        {
-          CategoryImage: 'http://oc9nepvur.bkt.clouddn.com/nav1.jpg',
-          CategoryId: 1,
-          CategoryType: 'test',
-          CategoryName: '情侣'
-        },
-
-        {
-          CategoryImage: 'http://oc9nepvur.bkt.clouddn.com/nav2.jpg',
-          CategoryId: 2,
-          CategoryType: 'test',
-          CategoryName: '酒店'
-        },
-
-        {
-          CategoryImage: 'http://oc9nepvur.bkt.clouddn.com/nav3.jpg',
-          CategoryId: 3,
-          CategoryType: 'test',
-          CategoryName: '摄影'
-        },
-
-        {
-          CategoryImage: 'http://oc9nepvur.bkt.clouddn.com/nav1.jpg',
-          CategoryId: 4,
-          CategoryType: 'test',
-          CategoryName: '美食'
-        },
-
-        {
-          CategoryImage: 'http://oc9nepvur.bkt.clouddn.com/nav1.jpg',
-          CategoryId: 5,
-          CategoryType: 'test',
-          CategoryName: '美食'
-        }
-
-      ];
+      // action.response.result = [
+      //   {
+      //     CategoryImage: 'http://oc9nepvur.bkt.clouddn.com/nav1.jpg',
+      //     CategoryId: 1,
+      //     CategoryType: 'test',
+      //     CategoryName: '情侣'
+      //   },
+      //
+      //   {
+      //     CategoryImage: 'http://oc9nepvur.bkt.clouddn.com/nav2.jpg',
+      //     CategoryId: 2,
+      //     CategoryType: 'test',
+      //     CategoryName: '酒店'
+      //   },
+      //
+      //   {
+      //     CategoryImage: 'http://oc9nepvur.bkt.clouddn.com/nav3.jpg',
+      //     CategoryId: 3,
+      //     CategoryType: 'test',
+      //     CategoryName: '摄影'
+      //   },
+      //
+      //   {
+      //     CategoryImage: 'http://oc9nepvur.bkt.clouddn.com/nav1.jpg',
+      //     CategoryId: 4,
+      //     CategoryType: 'test',
+      //     CategoryName: '美食'
+      //   },
+      //
+      //   {
+      //     CategoryImage: 'http://oc9nepvur.bkt.clouddn.com/nav1.jpg',
+      //     CategoryId: '4',
+      //     CategoryType: 'test',
+      //     CategoryName: '美食'
+      //   }
+      //
+      // ];
 
 
 
@@ -109,51 +109,51 @@ function index(state = {
       });
     }
     case HOME_INDEX_SUCCESS: {
-      action.response.result.AllPageCount = 3;
-      // console.log('HOME_INDEX_SUCCESS');
-      action.response.result.Data = [
-        {
-          Id: 1,
-          Title: 'Title of the Article',
-          HeadImg: 'http://oc9nepvur.bkt.clouddn.com/articlePic1.jpg',
-          Introduce: '',
-          WordContent: '',
-          CreatTime: '2 hours ago',
-          LikeNum: 377,
-          CommentNum: 122,
-          UserId: 1,
-          UserName: 'Olen B. Shephard',
-          UserHeadImage: 'http://placeholder.qiniudn.com/118x118'
-        },
-        {
-          Id: 2,
-          Title: 'Title of the Article',
-          HeadImg: 'http://oc9nepvur.bkt.clouddn.com/articlePic2.jpg',
-          Introduce: '',
-          WordContent: '',
-          CreatTime: '2 hours ago',
-          LikeNum: 377,
-          CommentNum: 122,
-          UserId: 1,
-          UserName: 'Olen B. Shephard',
-          UserHeadImage: 'http://placeholder.qiniudn.com/118x118'
-        },
-        {
-          Id: 3,
-          Title: 'Title of the Article',
-          HeadImg: 'http://oc9nepvur.bkt.clouddn.com/articlePic3.jpg',
-          Introduce: '',
-          WordContent: '',
-          CreatTime: '2 hours ago',
-          LikeNum: 377,
-          CommentNum: 122,
-          UserId: 1,
-          UserName: 'Olen B. Shephard',
-          UserHeadImage: 'http://placeholder.qiniudn.com/118x118'
-        }
-
-
-      ]
+      // action.response.result.AllPageCount = 3;
+      // // console.log('HOME_INDEX_SUCCESS');
+      // action.response.result.Data = [
+      //   {
+      //     Id: 1,
+      //     Title: 'Title of the Article',
+      //     HeadImg: 'http://oc9nepvur.bkt.clouddn.com/articlePic1.jpg',
+      //     Introduce: '',
+      //     WordContent: '',
+      //     CreatTime: '2 hours ago',
+      //     LikeNum: 377,
+      //     CommentNum: 122,
+      //     UserId: 1,
+      //     UserName: 'Olen B. Shephard',
+      //     UserHeadImage: 'http://placeholder.qiniudn.com/118x118'
+      //   },
+      //   {
+      //     Id: 2,
+      //     Title: 'Title of the Article',
+      //     HeadImg: 'http://oc9nepvur.bkt.clouddn.com/articlePic2.jpg',
+      //     Introduce: '',
+      //     WordContent: '',
+      //     CreatTime: '2 hours ago',
+      //     LikeNum: 377,
+      //     CommentNum: 122,
+      //     UserId: 1,
+      //     UserName: 'Olen B. Shephard',
+      //     UserHeadImage: 'http://placeholder.qiniudn.com/118x118'
+      //   },
+      //   {
+      //     Id: 3,
+      //     Title: 'Title of the Article',
+      //     HeadImg: 'http://oc9nepvur.bkt.clouddn.com/articlePic3.jpg',
+      //     Introduce: '',
+      //     WordContent: '',
+      //     CreatTime: '2 hours ago',
+      //     LikeNum: 377,
+      //     CommentNum: 122,
+      //     UserId: 1,
+      //     UserName: 'Olen B. Shephard',
+      //     UserHeadImage: 'http://placeholder.qiniudn.com/118x118'
+      //   }
+      //
+      //
+      // ]
       // console.log(state);
 
 

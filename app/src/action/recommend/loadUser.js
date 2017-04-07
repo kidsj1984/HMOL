@@ -12,7 +12,7 @@ function loadUser(showLoading, UserId) {
     [CALL_API]: {
       types: [RECOMMEND_USER_REQUEST, RECOMMEND_USER_SUCCESS, RECOMMEND_USER_FAILURE],
       endpoint: 'QueryUser', // todo add endpoint
-      json: true,
+      json: false,
       params: {
         UserId
       },
@@ -28,7 +28,7 @@ function loadArticleList(page, refresh, showLoading, UserId) {
     [CALL_API]: {
       types: [RECOMMEND_ARTICLE_LIST_REQUEST, RECOMMEND_ARTICLE_LIST_SUCCESS, RECOMMEND_ARTICLE_LIST_FAILURE],
       endpoint: 'QueryWordInfoPageListByUserId',
-      json: true,
+      json: false,
       params: {
         UserId,
         PageIndex: page

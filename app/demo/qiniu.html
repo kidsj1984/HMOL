@@ -19,7 +19,8 @@
 
 
 <script>
-    (new QiniuJsSDK()).uploader({
+    var qiniuJsSDK = new QiniuJsSDK();
+    qiniuJsSDK.uploader({
         runtimes: 'html5,flash,html4',      // 上传模式，依次退化
         qiniu_upurl: 'https://up.qbox.me/' ,
         browse_button: 'uploadBtn',         // 上传选择的点选按钮，必需
@@ -79,6 +80,15 @@
                 // 每个文件上传时，处理相关的事情
             },
             'FileUploaded': function(up, file, info) {
+                const infoObj = JSON.parse(info);
+                console.log(up)
+                console.log(file)
+                console.log(infoObj)
+                console.log(qiniuJsSDK.domain)
+
+                const d = qiniuJsSDK.domain + infoObj.key;
+
+                console.log(d);
 //                console.log('FileUploaded');
                 // 每个文件上传成功后，处理相关的事情
                 // 其中info是文件上传成功后，服务端返回的json，形式如：
@@ -104,9 +114,9 @@
 
                 // 若想在前端对每个文件的key进行个性化处理，可以配置该函数
                 // 该配置必须要在 unique_names: false , save_key: false 时才生效
-//                ext = Qiniu.getFileExtension(file.name);
-//                name = ext ? file.id + '.' + ext : file.id;
-                name = file.name;
+                ext = Qiniu.getFileExtension(file.name);
+                name = ext ? file.id + '.' + ext : file.id;
+//                name = file.name;
                 var key = name;
 
                 return key;

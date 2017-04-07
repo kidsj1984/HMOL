@@ -11,7 +11,7 @@ function loadRecommend(page, refresh, showLoading) {
     [CALL_API]: {
       types: [HOME_RECOMMEND_REQUEST, HOME_RECOMMEND_SUCCESS, HOME_RECOMMEND_FAILURE],
       endpoint: 'QueryUserPageListByRecommendation', // todo add endpoint
-      json: true,
+      json: false,
       params: {
         PageIndex: page
       },

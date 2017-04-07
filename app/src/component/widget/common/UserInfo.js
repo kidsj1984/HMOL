@@ -95,8 +95,8 @@ export default class UserInfo extends Component {
       return (
         <div className="user-info">
           <div className="user-name">
-            <p className="n"></p>
-            <p className="d"></p>
+            <p className="n" />
+            <p className="d" />
           </div>
           <div className="user-tag">
           </div>
